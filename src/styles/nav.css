@@ -1,0 +1,82 @@
+/* Nav bar style */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 7vw;
+  width: 90%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.navlinks {
+  gap: 5vw;
+  color: white;
+  display: flex;
+  cursor: pointer;
+}
+
+.navlinks li {
+  list-style: none;
+  font-size: 1.8vw;
+}
+.navlinks a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navlinks a:hover {
+  color: #555;
+}
+.more {
+  display: none;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 3.5vh;
+  }
+  nav {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    font-size: 3vh;
+    width: 100%;
+  }
+
+  .navlinks.show {
+    visibility: visible;
+  }
+  .buttonMenu {
+    width: 50px;
+    display: block;
+  }
+
+  .navlinks {
+    z-index: 50;
+    position: absolute;
+    width: 50%;
+    gap: 3vw;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navlinks li {
+    background-color: white;
+    font-size: 1vh;
+    border-radius: 7px;
+    margin-bottom: 0;
+    border: 0.2px solid black;
+    overflow: hidden;
+  }
+  .navlinks a {
+    color: black;
+    padding: 1vh 1vh;
+    font-size: 1.5rem;
+   
+  }
+
+}

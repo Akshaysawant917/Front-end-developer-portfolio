@@ -1,0 +1,137 @@
+/* hero section style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+.hero {
+  padding: 6vw 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.left a {
+  color: rgb(16, 16, 16);
+  text-decoration: none;
+}
+.left p {
+  font-size: 4vw;
+  display: inline;
+  color: rgb(235, 229, 62);
+  font-weight: 600;
+}
+.left h1,
+h5 {
+  margin-bottom: 1.5vw;
+}
+.right {
+  width: 40vw;
+  display: contents;
+}
+.right img {
+  width: 350px;
+  /* border-radius:0% 50% 50% 50%; */
+  animation: floting;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floting {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.contact-button {
+  font-size: 2vw;
+
+  padding: 1vw 12px;
+  margin-top: 2vw;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.contact-button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.contact-button:hover a {
+  color: white;
+}
+.buttonMenu {
+  display: none;
+}
+
+/* * media queries for mobile view */
+@media (max-width: 600px) {
+  body {
+    font-size: 3.5vh;
+  }
+  .hero {
+    width: 100%;
+    font-size: 3vh;
+    margin-top: 10vh;
+    gap: 8vh;
+    flex-direction: column-reverse;
+  }
+  .left {
+    width: 100%;
+    align-items: start;
+  }
+  .left p {
+    font-size: 3vh;
+  }
+  .left h1 {
+    margin-top: 20px;
+  }
+  .left h5 {
+    margin-bottom: 4vh;
+  }
+ 
+  .right img {
+    width: 200px;
+  }
+  .more {
+    display: block;
+    margin-right: 2vw;
+  }
+  .left h1,
+  h5 {
+    margin-bottom: 3vh;
+  }
+  .left button {
+    font-size: 2vh;
+    font-weight: 600;
+    padding: 1vw 12px;
+  }
+}

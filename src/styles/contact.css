@@ -1,0 +1,186 @@
+/* * style section for contact  */ 
+/* .Contact {
+  padding: 6vw 7vw;
+  display: flex;
+  align-items: center;
+  background-color: rgb(19, 19, 57);
+}
+.contact-left {
+  width: 50%;
+}
+.contact-right {
+  width: 50%;
+}
+.contact-right a {
+  text-decoration: none;
+  color: white;
+} */
+
+/* Add this CSS to your component, either in a separate CSS file or as part of your component */
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2vw 10vw;
+  padding: 2vw 10vw;
+  /* background-color: #1b2845; */
+  border-radius: 5vw;
+ background-image:url(../assets/space.png);
+
+}
+
+.social-media,
+.contact-form {
+  width: 30%; /* Adjust the width as needed */
+  text-align: center;
+}
+
+.imgSection {
+  width: 40%; /* Adjust the width as needed */
+}
+
+.social-media h2,
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 10px;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+color: white;
+
+  font-size: 5vh;
+  transition: color 0.3s ease;
+}
+
+.social-media ul li a:hover,
+.social-media ul li a:focus {
+  color: #007bff; 
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #007bff; /* Bootstrap primary color for example */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:focus {
+  background-color: #0056b3; /* Darker shade for hover/focus */
+}
+
+
+.imgSection img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  /* border-radius:0% 50% 50% 50%; */
+  animation: floting;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floting{
+  0%{
+    transform: translate(0,0px);
+  }
+  50%{
+    transform: translate(0,20px);
+  }
+  100%{
+    transform: translate(0,-0px);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .contact-us-container {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"] {
+    margin-bottom: 5px;
+    padding: 2px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 5px;
+}
+.contact-form textarea{
+height: 60px;
+}
+ 
+  .contact-form,
+  .imgSection {
+    width: 100%;
+    margin-bottom: 5px; /* Add margin to create space between sections on smaller screens */
+  }
+  .social-media ul li a {
+
+    font-size: 2vh;
+  }
+  .social-media h2{
+ 
+   display: none;
+  }
+  .social-media{
+    height: 60px;
+   
+  }
+ 
+  .social-media {
+    font-size: 1rem;
+  }
+  .social-media ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .imgSection img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+}
+
